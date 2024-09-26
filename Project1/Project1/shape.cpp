@@ -41,7 +41,7 @@ void Shape::transform::shift(int m, int n, int k)
 
 
 
-void transform::scaleX(int a)
+void Shape::transform::scaleX(int a)
 {
 	switch (shape.getType())
 	{
@@ -66,10 +66,10 @@ void transform::scaleX(int a)
 		shape.x8 *= a;
 		break;
 	}
-	return shape;
+	//return shape;
 }
 
-void transform::scaleY(int d)
+void Shape::transform::scaleY(int d)
 {
 	switch (shape.getType())
 	{
@@ -94,10 +94,10 @@ void transform::scaleY(int d)
 		shape.y8 *= d;
 		break;
 	}
-	return shape;
+	//return shape;
 }
 
-void transform::scaleZ(int e)
+void Shape::transform::scaleZ(int e)
 {
 	switch (shape.getType())
 	{
@@ -122,10 +122,10 @@ void transform::scaleZ(int e)
 		shape.z8 *= e;
 		break;
 	}
-	return shape;
+	//return shape;
 }
 
-void transform::scale(int s)
+void Shape::transform::scale(int s)
 {
 	switch (shape.getType())
 	{
@@ -151,5 +151,5 @@ void transform::scale(int s)
 		break;
 	}
 
-	return shape;
+	//return shape;
 }
