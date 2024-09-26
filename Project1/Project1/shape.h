@@ -3,6 +3,7 @@
 
 enum class Shapetype
 {
+	SHAPE,
 	LINE,
 	SQR,
 	CUBE,
@@ -12,11 +13,15 @@ enum class Shapetype
 
 class Shape
 {
+
+
+	//transform transform;
 public:
 	Shape() = default;
+	Shape(Shapetype type);
 	Shapetype getType() { return type; }
 //protected:
-	Shapetype type = Shapetype::LINE;
+	Shapetype type;
 	int x1 = 0, y1 = 0, z1 = 0,
 		x2 = 0, y2 = 0, z2 = 0,
 		x3 = 0, y3 = 0, z3 = 0,
@@ -29,4 +34,18 @@ public:
 	double square = 0;
 	double height = 0;
 	double radius = 0;
+	
+public:
+	class transform
+	{
+		//private: 
+		//Shape shape1;//циклическая ссылка
+	public:
+		transform();
+		void shift(int m, int n, int k);
+		Shape scaleX(int a, Shape sh);
+		Shape scaleY(int d, Shape sh);
+		Shape scaleZ(int e, Shape sh);
+		Shape scale(int s, Shape sh);
+	};
 };

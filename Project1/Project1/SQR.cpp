@@ -2,7 +2,7 @@
 
 SQR::SQR(int _x1, int _y1, int _x2, int _y2, int _x3, int _y3, int _x4, int _y4)
 {
-	type = Shapetype::SQR;
+	Shape(Shapetype::SQR);
 	x1 = _x1;
 	y1 = _y1;
 	x2 = _x2;

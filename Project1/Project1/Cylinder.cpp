@@ -4,6 +4,7 @@
 
 Cylinder::Cylinder(int _x1, int _y1, double R, double H)
 {
+	Shape(Shapetype::CYLINDER);
 	x1 = _x1; y1 = _y1;
 	radius = R;
 	height = H;
